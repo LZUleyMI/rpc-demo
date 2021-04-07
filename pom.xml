@@ -9,11 +9,13 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>rpc-privider</module>
+        <module>rpc-provider</module>
         <module>rpc-consumer</module>
         <module>rpc-api</module>
     </modules>
-
+    <properties>
+        <spring-version>4.3.2.RELEASE</spring-version>
+    </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -22,6 +24,11 @@
                 <version>2.8.4</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
