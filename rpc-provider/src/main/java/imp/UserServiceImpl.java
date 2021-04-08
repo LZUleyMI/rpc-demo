@@ -21,9 +21,9 @@ public class UserServiceImpl implements UserService {
         user.setSex(1);
 
         UserInfo u1 = new UserInfo();
-        user.setName("ton1");
-        user.setAge(10);
-        user.setSex(1);
+        u1.setName("ton1");
+        u1.setAge(10);
+        u1.setSex(1);
 
         List<UserInfo> list = new ArrayList<UserInfo>();
         list.add(user);
